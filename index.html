@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
-
     <title>Portfolio</title>
   </head>
   <body style="padding-top: 70px; overflow-y: auto;">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  
+
     <!-- Navbar -->
     <nav class="navbar navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
@@ -25,30 +24,127 @@
           <div class="offcanvas-body" style="padding-left: 15px; padding-right: 15px;">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="margin-bottom: 10px;">Likes/Dislikes</a>
+                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#likesDislikesModal" style="margin-bottom: 10px;">Likes/Dislikes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style="margin-bottom: 10px;">Favorite Quote</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#favqoute" style="margin-bottom: 10px;">Favorite Quote</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" style="margin-bottom: 10px;">Skills</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#skills" style="margin-bottom: 10px;">Skills</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-    
+
+    <!-- Likes/Dislikes Modal -->
+    <div class="modal fade" id="likesDislikesModal" tabindex="-1" aria-labelledby="likesDislikesModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="likesDislikesModalLabel">Likes/Dislikes</h5>
+          </div>
+          <div class="modal-body">
+            <p><strong>Likes:</strong> Makeup, Food, Music, Beaches, Anime, Thai-drama</p>
+            <p><strong>Dislikes:</strong> Loud chewing, Gabi, Lutya, Shell Soup</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Favorite Quote Modal -->
+    <div class="modal fade" id="favqoute" tabindex="-1" aria-labelledby="favqouteLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="favqouteLabel">Favorite Quote</h5>
+          </div>
+          <div class="modal-body">
+            <p>'Remember how far you've come, not just how far you have to go. You are not where you want to be, but neither are you where you used to be.'</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Modal -->
+    <div class="modal fade" id="skills" tabindex="-1" aria-labelledby="skillsLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="skillsLabel">Skills</h5>
+          </div>
+          <div class="modal-body">
+            <p>CSS, HTML, JAVASCRIPT, LAYOUTING</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Section -->
     <div class="container mt-5 pt-5 text-center" style="margin-top: 100px; padding-left: 15px; padding-right: 15px;">
       <img src="./img/idphoto.jpg" alt="Profile Photo" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
       <h2 class="mt-3" style="margin-top: 15px;">DAPATON, HONEY GRACE, CAGAY</h2>
       <p class="lead" style="margin-top: 10px;">Curriculum Vitae</p>
     </div>
-    
-    <div class="c" style="margin-left: 15px; margin-right: 15px; padding-left: 10px; padding-right: 10px; margin-top: 20px; padding-top: 10px;">
-      <h3 style="margin-bottom: 15px;">Education</h3>
-      <p style="margin-bottom: 10px;">Curabitur vel neque nec risus viverra feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-      <p style="margin-bottom: 10px;">Proin facilisis augue vel nunc vehicula, nec auctor ligula gravida. Etiam euismod, lacus at bibendum pulvinar, erat ex luctus ligula, nec sollicitudin purus enim in lacus.</p>
+
+    <!-- Education and Work Experience -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6" style="padding-left: 15px; padding-right: 15px;">
+          <h3 style="margin-bottom: 15px;">Education</h3>
+          <p style="margin-bottom: 10px;">Primary: Lindaban Elementary</p>
+          <p style="margin-bottom: 10px; padding-left: 60px;">Lindaban, Manolo Fortich, Bukidnon</p>
+          <p style="margin-bottom: 10px; padding-left: 60px;">2010 - 2015</p>
+          <p style="margin-bottom: 10px;">Secondary: Manolo Fortich National High School</p>
+          <p style="margin-bottom: 10px; padding-left: 60px;">Manolo Fortich, Bukidnon</p>
+          <p style="margin-bottom: 10px; padding-left: 60px;">2015 - 2021</p>
+          <p style="margin-bottom: 10px;">Tertiary: Northern Bukidnon State College</p>
+          <p style="margin-bottom: 10px; padding-left: 60px;">Manolo Fortich, Bukidnon</p>
+          <p style="margin-bottom: 10px; padding-left: 60px;">2021 - Present</p>
+        </div>
+        <div class="col-md-6" style="padding-left: 15px; padding-right: 15px;">
+          <h3 style="margin-bottom: 15px;">Work Experience</h3>
+          <p style="margin-bottom: 10px;">East West Seed Company</p>
+          <p style="margin-bottom: 10px;">Seed Extractor</p>
+          <p style="margin-bottom: 40px;">August 2021 - December 2021 (On Call)</p>
+          <p style="margin-bottom: 10px;">Dahilayan Forest Park</p>
+          <p style="margin-bottom: 10px;">Cashier</p>
+          <p style="margin-bottom: 10px;">March 2022 - August 2022</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container d-flex justify-content-center mt-5">
+      <div class="card mb-3" style="max-width: 720px;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="./img/photo.jpg" class="img-fluid rounded-start" alt="..." style="width: 100%; height: auto; margin-left: 10px;">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Hello there!</h5>
+              <p class="card-text">
+                I’m Honey Grace but you can call me your next favorite storyteller. Growing up with my grandparents, I picked up a love for old-fashioned values—like handwritten notes and heartfelt conversations—but I’ve since learned to embrace the modern world with open arms and an open mind.
+                I’m the kind of person who thrives on deep connections, though I admit, I’m not the best at making the first move. My friends often tell me their first impression of me was a mix of “innocent,” “shy,” and “a little too bida-bida”—but that’s just the surface. Deep down, I’m someone who’s always ready to listen, share a laugh, and support others (just don’t ask me to manage your finances, haha!).
+                When I’m not making new memories with my friends, you’ll find me in my favorite spot—a quiet room with music in the background and a stack of manga or manhwa by my side.
+                In a nutshell, I’m a blend of tradition and modernity, a dreamer with her feet firmly on the ground, and always a work in progress. Let’s make this chapter of life unforgettable together!
+              </p>
+              <p class="card-text"><small class="text-muted">Last updated 59 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
