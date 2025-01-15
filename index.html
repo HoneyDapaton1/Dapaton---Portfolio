@@ -1,63 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
+
+    <title>Portfolio</title>
+  </head>
+  <body style="padding-top: 70px; overflow-y: auto;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="padding-left: 15px; padding-right: 15px;">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header" style="padding-left: 15px; padding-right: 15px;">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" style="margin-bottom: 10px;">Know her more</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body" style="padding-left: 15px; padding-right: 15px;">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="margin-bottom: 10px;">Likes/Dislikes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="margin-bottom: 10px;">Favorite Quote</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="margin-bottom: 10px;">Skills</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <import src="index.css"> </import>
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-</head>
-
-<body>
-    <div class="card mb-3" style="max-width: 540px;">
-    <div class="card text-center">
-        <div class="card-header">
-          MY PORTFOLIO
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">HONEY GRACE DAPATON</h5>
-          <p class="card-text">4th year student</p>
-        </div>
-        <div class="card-footer text-body-secondary">
-          /
-        </div>
-      </div>
-
-
-      <img src="./img/Screenshot_20250114-111432_1.png" class="rounded mx-auto d-block" alt="...">
-
-      <div class="card">
-        <div class="card-body">
-          Curriculum Vitae
-
-          Primary:          Lindaban Elementary School
-                            Lindaban, Mnaolo Fortich, Bukidnon
-
-          Secondary:        Manolo Fortich National High School
-                            Manolo Fortich, Bukidnon
-                            2015 - 2021
-
-          Tertiary:         Northern Bukidnon State College
-                            Kihare, Tankulan, Manolo Fortich, Bukidnon
-            
-
-        </div>
-      </div>
-
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-          </li>
-        </ul>
-      </nav>
-</body>
+    <div class="container mt-5 pt-5 text-center" style="margin-top: 100px; padding-left: 15px; padding-right: 15px;">
+      <img src="./img/idphoto.jpg" alt="Profile Photo" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
+      <h2 class="mt-3" style="margin-top: 15px;">DAPATON, HONEY GRACE, CAGAY</h2>
+      <p class="lead" style="margin-top: 10px;">Curriculum Vitae</p>
+    </div>
+    
+    <div class="c" style="margin-left: 15px; margin-right: 15px; padding-left: 10px; padding-right: 10px; margin-top: 20px; padding-top: 10px;">
+      <h3 style="margin-bottom: 15px;">Education</h3>
+      <p style="margin-bottom: 10px;">Curabitur vel neque nec risus viverra feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <p style="margin-bottom: 10px;">Proin facilisis augue vel nunc vehicula, nec auctor ligula gravida. Etiam euismod, lacus at bibendum pulvinar, erat ex luctus ligula, nec sollicitudin purus enim in lacus.</p>
+    </div>
+  </body>
 </html>
